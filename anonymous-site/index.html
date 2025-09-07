@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Supplement Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Speech Supplement Gallery</h1>
+        <div id="chips-container"></div>
+    </header>
+    <main>
+        <section id="ecapa-section">
+            <h2>All ECAPA Normalized Graphs</h2>
+            <div class="grid" id="ecapa-grid"></div>
+        </section>
+        <section id="resnet-section">
+            <h2>All ResNet Graphs</h2>
+            <div class="grid" id="resnet-grid"></div>
+        </section>
+        <section id="scatter-section">
+            <h2>SNR–Similarity Scatter Plots</h2>
+            <div class="grid" id="scatter-grid"></div>
+        </section>
+        <section id="audio-section">
+            <h2>Audio Samples</h2>
+            <div class="grid" id="audio-grid"></div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">✕</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
